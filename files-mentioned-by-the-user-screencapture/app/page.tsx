@@ -222,7 +222,7 @@ function Hero() {
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
               href="#portfolio"
-              className="group inline-flex h-12 min-w-44 items-center justify-center gap-2 rounded-md bg-paper px-6 text-sm font-extrabold text-ink shadow-clean transition duration-200 hover:-translate-y-0.5 hover:bg-white"
+              className="group inline-flex h-12 min-w-44 items-center justify-center gap-2 rounded-md bg-paper px-6 text-sm font-extrabold text-ink shadow-clean transition duration-200 hover:-translate-y-0.5 hover:bg-paper"
             >
               <Film size={17} strokeWidth={2.3} />
               View My Work
@@ -265,7 +265,7 @@ function About() {
                   <span className="text-paper/[0.92]">{skill}</span>
                   <span className="text-accent">{value}%</span>
                 </div>
-                <div className="h-px overflow-hidden bg-white/[0.08]">
+                <div className="h-px overflow-hidden bg-paper/[0.12]">
                   <motion.div
                     className="h-px bg-accent"
                     initial={{ width: 0 }}
@@ -283,7 +283,7 @@ function About() {
           transition={{ ...fadeIn.transition, delay: 0.08 }}
           className="relative mx-auto w-full max-w-[730px]"
         >
-          <div className="overflow-hidden rounded-lg border border-white/[0.10] bg-card shadow-clean">
+          <div className="overflow-hidden rounded-lg border border-paper/[0.15] bg-card shadow-clean">
             <Image
               src="/images/about-frame.jpg"
               alt="Cinematographer operating a camera rig outdoors"
@@ -312,13 +312,13 @@ function Portfolio() {
           className="mb-12 flex justify-center"
           transition={{ ...fadeIn.transition, delay: 0.04 }}
         >
-          <div className="inline-flex rounded-md border border-white/[0.08] bg-card p-1">
+          <div className="inline-flex rounded-md border border-paper/[0.12] bg-card p-1">
             {["All", "Video", "Film", "Design"].map((filter) => (
               <button
                 key={filter}
                 className={`h-8 min-w-24 rounded px-5 text-xs font-extrabold transition duration-200 ${
                   filter === "All"
-                    ? "bg-accent text-white"
+                    ? "bg-accent text-ink"
                     : "text-muted hover:text-paper"
                 }`}
                 type="button"
@@ -386,7 +386,7 @@ function Services() {
                 transition={{ ...fadeIn.transition, delay: index * 0.05 }}
                 className="group rounded-lg border border-white/[0.08] bg-card p-8 transition duration-300 hover:-translate-y-1 hover:border-accent/[0.55]"
               >
-                <div className="mb-7 inline-flex h-12 w-12 items-center justify-center rounded-md border border-accent/[0.20] bg-accent/[0.10] text-accent transition duration-300 group-hover:bg-accent group-hover:text-white">
+                <div className="mb-7 inline-flex h-12 w-12 items-center justify-center rounded-md border border-accent/[0.20] bg-accent/[0.10] text-accent transition duration-300 group-hover:bg-accent group-hover:text-ink">
                   <Icon size={22} strokeWidth={2.2} />
                 </div>
                 <h3 className="display-font text-2xl font-semibold text-paper">
