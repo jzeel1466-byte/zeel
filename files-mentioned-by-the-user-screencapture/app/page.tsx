@@ -474,7 +474,7 @@ function Contact() {
               </h3>
               <div className="mt-7 space-y-5">
                 <a
-                  href="mailto:jzeel1466@gmail.com
+                  href="mailto:jzeel1466@gmail.com"
                   className="flex items-center gap-4 text-muted transition hover:text-paper"
                 >
                   <Mail className="text-accent" size={19} />
