@@ -474,7 +474,7 @@ function Contact() {
               </h3>
               <div className="mt-7 space-y-5">
                 <a
-                  href="mailto:hello@zeeljain.com"
+                  href="mailto:jzeel1466@gmail.com
                   className="flex items-center gap-4 text-muted transition hover:text-paper"
                 >
                   <Mail className="text-accent" size={19} />
@@ -482,11 +482,11 @@ function Contact() {
                     <span className="block text-xs font-extrabold uppercase tracking-[0.12em] text-muted/[0.75]">
                       Email
                     </span>
-                    hello@zeeljain.com
+                    jzeel1466@gmail.com
                   </span>
                 </a>
                 <a
-                  href="tel:+15551234567"
+                  href="tel:+919321428829"
                   className="flex items-center gap-4 text-muted transition hover:text-paper"
                 >
                   <Phone className="text-accent" size={19} />
@@ -494,7 +494,7 @@ function Contact() {
                     <span className="block text-xs font-extrabold uppercase tracking-[0.12em] text-muted/[0.75]">
                       Phone
                     </span>
-                    +1 (555) 123-4567
+                    +91 9321428829
                   </span>
                 </a>
               </div>
