@@ -1,16 +1,15 @@
 @import url("https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #0f0f10;
-  --card: #171717;
-  --text: #f5f5f5;
-  --muted: #a1a1aa;
-  --accent: #3b82f6;
+  --background: #F5F1E8;
+  --card: #EDE5D8;
+  --text: #1A1A1A;
+  --muted: #5A5248;
+  --accent: #C9A876;
 }
 
 * {
@@ -30,8 +29,8 @@ body {
 }
 
 body::selection {
-  background: rgba(59, 130, 246, 0.32);
-  color: #ffffff;
+  background: rgba(201, 168, 118, 0.2);
+  color: #1A1A1A;
 }
 
 a {
@@ -55,14 +54,14 @@ textarea {
 }
 
 .hairline {
-  border-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(26, 26, 26, 0.1);
 }
 
 .particle {
   position: absolute;
   border-radius: 999px;
   background: var(--accent);
-  opacity: 0.7;
+  opacity: 0.6;
   pointer-events: none;
 }
 
@@ -70,7 +69,7 @@ textarea {
   position: absolute;
   width: 16px;
   height: 16px;
-  border: 2px solid rgba(245, 245, 245, 0.66);
+  border: 2px solid rgba(201, 168, 118, 0.4);
   border-radius: 999px;
   pointer-events: none;
 }
