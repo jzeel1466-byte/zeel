@@ -8,18 +8,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: "#0F0F10",
-        card: "#171717",
-        paper: "#F5F5F5",
-        muted: "#A1A1AA",
-        accent: "#3B82F6"
+        ink: "#F5F1E8",
+        card: "#EDE5D8",
+        paper: "#1A1A1A",
+        muted: "#5A5248",
+        accent: "#C9A876"
       },
       fontFamily: {
         body: ["Inter", "system-ui", "sans-serif"],
         display: ["Clash Display", "Inter", "system-ui", "sans-serif"]
       },
       boxShadow: {
-        clean: "0 24px 70px rgba(0, 0, 0, 0.32)"
+        clean: "0 24px 70px rgba(26,26,26,0.12)"
       }
     }
   },
