@@ -491,7 +491,7 @@ function About() {
 }
 
 function Portfolio() {
-  const [activeFilter, setActiveFilter] = useState("All");
+  const [activeFilter, setActiveFilter] = useState("Design");
 
   return (
     <section id="portfolio" className="border-b hairline bg-ink py-24 md:py-32">
@@ -506,7 +506,7 @@ function Portfolio() {
           transition={{ ...fadeIn.transition, delay: 0.04 }}
         >
           <div className="inline-flex rounded-md border border-paper/[0.12] bg-card p-1">
-            {["All", "Design"].map((filter) => (
+            {["Video", "Film", "Design"].map((filter) => (
               <button
                 key={filter}
                 className={`h-8 min-w-24 rounded px-5 text-xs font-extrabold transition duration-200 ${
@@ -526,7 +526,6 @@ function Portfolio() {
           {portfolioItems
   .filter(
     (item) =>
-      activeFilter === "All" ||
       item.tags.includes(activeFilter)
   )
   .map((item, index) => (
