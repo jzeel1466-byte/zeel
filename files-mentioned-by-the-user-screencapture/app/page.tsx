@@ -35,7 +35,7 @@ const portfolioItems = [
   {
     title: "Design 01",
     image: "/images/design-01.jpg",
-    category: "Design",     category: "Design",     tags: ["Design"]
+    category: "Design",     tags: ["Design"]
   },
   {
     title: "Design 02",
