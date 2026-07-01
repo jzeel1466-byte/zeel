@@ -1,5 +1,5 @@
 "use client";
-
+import emailjs from "@emailjs/browser";
 import Image from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -514,7 +514,7 @@ function Portfolio() {
                     ? "bg-accent text-ink"
                     : "text-muted hover:text-paper"
                 }`}
-                type="button"
+                type="submit"
                 onClick={() => setActiveFilter(filter)}
               >
                 {filter}
@@ -606,6 +606,24 @@ function Services() {
 }
 
 function Contact() {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_p72u1rh",
+      "template_efs6ymp",
+      e.target,
+      "V8w9zQMjESV3PMGtA"
+    )
+    .then(() => {
+      alert("Message sent successfully!");
+    })
+    .catch((error) => {
+      console.log(error);
+      alert("Failed to send message.");
+    });
+  };
+
   return (
     <section id="contact" className="border-b hairline bg-ink py-24 md:py-32">
       <div className="section-shell">
@@ -615,9 +633,11 @@ function Contact() {
         />
         <div className="grid gap-8 lg:grid-cols-[1fr_0.48fr]">
           <motion.form
-            {...fadeIn}
-            className="rounded-lg border border-white/[0.08] bg-card p-8 shadow-clean"
-          >
+            ref={form}
+  onSubmit={sendEmail}
+  {...fadeIn}
+  className="rounded-lg border border-white/[0.08] bg-card p-8 shadow-clean"
+>
             <h3 className="display-font text-2xl font-semibold text-paper">
               Send a Message
             </h3>
@@ -629,13 +649,14 @@ function Contact() {
               <label className="block text-sm font-bold text-paper/[0.86]">
                 Name
                 <input
+                  name="name"
                   className="mt-2 h-12 w-full rounded-md border border-white/[0.08] bg-ink px-4 text-paper outline-none transition placeholder:text-muted/[0.55] focus:border-accent"
-                  placeholder="Your name"
-                />
+               />
               </label>
               <label className="block text-sm font-bold text-paper/[0.86]">
                 Email
                 <input
+                  name="email"
                   className="mt-2 h-12 w-full rounded-md border border-white/[0.08] bg-ink px-4 text-paper outline-none transition placeholder:text-muted/[0.55] focus:border-accent"
                   placeholder="your@email.com"
                   type="email"
@@ -645,6 +666,7 @@ function Contact() {
             <label className="mt-6 block text-sm font-bold text-paper/[0.86]">
               Subject
               <input
+                name="subject"
                 className="mt-2 h-12 w-full rounded-md border border-white/[0.08] bg-ink px-4 text-paper outline-none transition placeholder:text-muted/[0.55] focus:border-accent"
                 placeholder="Project inquiry"
               />
@@ -652,12 +674,13 @@ function Contact() {
             <label className="mt-6 block text-sm font-bold text-paper/[0.86]">
               Message
               <textarea
+                name="message"
                 className="mt-2 min-h-36 w-full resize-none rounded-md border border-white/[0.08] bg-ink px-4 py-4 text-paper outline-none transition placeholder:text-muted/[0.55] focus:border-accent"
                 placeholder="Tell me about your project..."
               />
             </label>
             <button
-              type="button"
+              type="submit"
               className="mt-7 inline-flex h-12 w-full items-center justify-center gap-2 rounded-md bg-accent px-5 text-sm font-extrabold text-white transition duration-200 hover:-translate-y-0.5 hover:bg-paper hover:text-ink"
             >
               <Send size={17} strokeWidth={2.3} />
