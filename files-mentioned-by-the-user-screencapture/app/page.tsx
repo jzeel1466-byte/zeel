@@ -213,7 +213,7 @@ const portfolioItems = [
   },
   {
     title: "Design 37",
-    image: "/images/design-37.jpg",
+    image: "/images/design-37.png",
     tags: ["Design"]
   },
   {
