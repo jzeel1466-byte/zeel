@@ -33,52 +33,52 @@ const skills: Array<[string, number]> = [
 const portfolioItems = [
   {
     title: "Design 01",
-    image: "/design-01.jpg",
+    image: "/images/design-01.jpg",
     tags: ["Design"]
   },
   {
     title: "Design 02",
-    image: "/design-02.jpg",
+    image: "/images/design-02.jpg",
     tags: ["Design"]
   },
   {
     title: "Design 03",
-    image: "/design-03.jpg",
+    image: "/images/design-03.jpg",
     tags: ["Design"]
   },
   {
     title: "Design 04",
-    image: "/design-04.jpg",
+    image: "/images/design-04.jpg",
     tags: ["Design"]
   },
   {
     title: "Design 05",
-    image: "/design-05.jpg",
+    image: "/images/design-05.jpg",
     tags: ["Design"]
   },
   {
     title: "Design 06",
-    image: "/design-06.jpg",
+    image: "/images/design-06.png",
     tags: ["Design"]
   },
   {
     title: "Design 07",
-    image: "/design-07.jpg",
+    image: "/images/design-07.jpg",
     tags: ["Design"]
   },
   {
     title: "Design 08",
-    image: "/design-08.jpg",
+    image: "/images/design-08.jpg",
     tags: ["Design"]
   },
   {
     title: "Design 09",
-    image: "/design-09.jpg",
+    image: "/images/design-09.jpg",
     tags: ["Design"]
   },
   {
     title: "Design 10",
-    image: "/design-10.jpg",
+    image: "/images/design-10.jpg",
     tags: ["Design"]
   }
 ];
