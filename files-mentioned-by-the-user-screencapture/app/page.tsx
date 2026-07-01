@@ -32,34 +32,54 @@ const skills: Array<[string, number]> = [
 
 const portfolioItems = [
   {
-    title: "Urban Nights - Short Film",
-    image: "/images/portfolio/urban-nights.jpg",
-    tags: ["Cinematography", "Color Grading", "Editing"]
+    title: "Design 01",
+    image: "/images/design/design-01.jpg",
+    tags: ["Design"]
   },
   {
-    title: "TechFlow Brand Identity",
-    image: "/images/portfolio/techflow-brand.jpg",
-    tags: ["Branding", "Logo Design", "Identity"]
+    title: "Design 02",
+    image: "/images/design/design-02.jpg",
+    tags: ["Design"]
   },
   {
-    title: "Product Launch Video",
-    image: "/images/portfolio/product-launch.jpg",
-    tags: ["Video Editing", "Motion Graphics", "Commercial"]
+    title: "Design 03",
+    image: "/images/design/design-03.jpg",
+    tags: ["Design"]
   },
   {
-    title: "Festival Poster Series",
-    image: "/images/portfolio/festival-poster.jpg",
-    tags: ["Poster Design", "Typography", "Print"]
+    title: "Design 04",
+    image: "/images/design/design-04.jpg",
+    tags: ["Design"]
   },
   {
-    title: "Documentary Edit",
-    image: "/images/portfolio/documentary-edit.jpg",
-    tags: ["Documentary", "Editing", "Storytelling"]
+    title: "Design 05",
+    image: "/images/design/design-05.jpg",
+    tags: ["Design"]
   },
   {
-    title: "Restaurant Brand Package",
-    image: "/images/portfolio/restaurant-brand.jpg",
-    tags: ["Branding", "Print Design", "Identity"]
+    title: "Design 06",
+    image: "/images/design/design-06.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 07",
+    image: "/images/design/design-07.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 08",
+    image: "/images/design/design-08.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 09",
+    image: "/images/design/design-09.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 10",
+    image: "/images/design/design-10.jpg",
+    tags: ["Design"]
   }
 ];
 
