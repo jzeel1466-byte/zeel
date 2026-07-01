@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
@@ -323,6 +324,7 @@ function SectionHeading({
 }
 
 export default function Home() {
+  const [activeFilter, setActiveFilter] = useState("All");
   return (
     <main className="min-h-screen bg-ink text-paper">
       <Header />
@@ -503,15 +505,16 @@ function Portfolio() {
           transition={{ ...fadeIn.transition, delay: 0.04 }}
         >
           <div className="inline-flex rounded-md border border-paper/[0.12] bg-card p-1">
-            {["All", "Video", "Film", "Design"].map((filter) => (
+            {["All", "Design"].map((filter) => (
               <button
                 key={filter}
                 className={`h-8 min-w-24 rounded px-5 text-xs font-extrabold transition duration-200 ${
-                  filter === "All"
+                  filter === activeFilter
                     ? "bg-accent text-ink"
                     : "text-muted hover:text-paper"
                 }`}
                 type="button"
+                onClick={() => setActiveFilter(filter)}
               >
                 {filter}
               </button>
@@ -519,7 +522,13 @@ function Portfolio() {
           </div>
         </motion.div>
         <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-          {portfolioItems.map((item, index) => (
+          {portfolioItems
+  .filter(
+    (item) =>
+      activeFilter === "All" ||
+      item.tags.includes(activeFilter)
+  )
+  .map((item, index) => (
             <motion.article
               key={item.title}
               {...fadeIn}
