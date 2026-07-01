@@ -80,6 +80,176 @@ const portfolioItems = [
     title: "Design 10",
     image: "/images/design-10.jpg",
     tags: ["Design"]
+  },
+  {
+    title: "Design 11",
+    image: "/images/design-11.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 12",
+    image: "/images/design-12.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 13",
+    image: "/images/design-13.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 14",
+    image: "/images/design-14.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 15",
+    image: "/images/design-15.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 16",
+    image: "/images/design-16.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 17",
+    image: "/images/design-17.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 18",
+    image: "/images/design-18.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 19",
+    image: "/images/design-19.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 20",
+    image: "/images/design-20.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 21",
+    image: "/images/design-21.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 22",
+    image: "/images/design-22.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 23",
+    image: "/images/design-23.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 24",
+    image: "/images/design-24.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 25",
+    image: "/images/design-25.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 26",
+    image: "/images/design-26.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 27",
+    image: "/images/design-27.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 28",
+    image: "/images/design-28.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 29",
+    image: "/images/design-29.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 30",
+    image: "/images/design-30.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 31",
+    image: "/images/design-31.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 32",
+    image: "/images/design-32.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 33",
+    image: "/images/design-33.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 34",
+    image: "/images/design-34.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 35",
+    image: "/images/design-35.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 36",
+    image: "/images/design-36.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 37",
+    image: "/images/design-37.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 38",
+    image: "/images/design-38.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 39",
+    image: "/images/design-39.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 40",
+    image: "/images/design-40.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 41",
+    image: "/images/design-41.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 42",
+    image: "/images/design-42.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 43",
+    image: "/images/design-43.jpg",
+    tags: ["Design"]
+  },
+  {
+    title: "Design 44",
+    image: "/images/design-44.jpg",
+    tags: ["Design"]
   }
 ];
 
