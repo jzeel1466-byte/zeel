@@ -324,7 +324,6 @@ function SectionHeading({
 }
 
 export default function Home() {
-  const [activeFilter, setActiveFilter] = useState("All");
   return (
     <main className="min-h-screen bg-ink text-paper">
       <Header />
@@ -492,6 +491,8 @@ function About() {
 }
 
 function Portfolio() {
+  const [activeFilter, setActiveFilter] = useState("All");
+
   return (
     <section id="portfolio" className="border-b hairline bg-ink py-24 md:py-32">
       <div className="section-shell">
