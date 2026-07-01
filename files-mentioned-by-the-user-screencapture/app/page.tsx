@@ -530,11 +530,13 @@ function Portfolio() {
   )
   .map((item, index) => (
             <motion.article
-              key={item.title}
-              {...fadeIn}
-              transition={{ ...fadeIn.transition, delay: index * 0.05 }}
-              className="portfolio-card group overflow-hidden rounded-lg border border-white/[0.08] bg-card shadow-clean transition duration-300 hover:-translate-y-1 hover:border-accent/[0.55]"
-            >
+  key={item.title}
+  {...fadeIn}
+  transition={{ ...fadeIn.transition, delay: index * 0.05 }}
+  whileHover={{ scale: 1.02 }}
+  onClick={() => window.open(item.image, "_blank")}
+  className="portfolio-card cursor-pointer group overflow-hidden rounded-lg border border-white/[0.08] bg-card shadow-clean transition duration-300 hover:-translate-y-1 hover:border-accent/[0.55]"
+>
               <div className="relative aspect-[1.35] overflow-hidden bg-black">
                 <Image
                   src={item.image}
